@@ -8,7 +8,7 @@ addons:
   firefox: "28.0"
 services:
   - mysql
-  - selenium
+#  - selenium
 
 env:
   global:
