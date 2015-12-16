@@ -1,4 +1,4 @@
-build_image: drydock/u14pytpls:prod
+build_image: drydock/u12pytpls:prod
 
 language: python
 
@@ -24,7 +24,7 @@ before_script:
   #- /etc/init.d/xvfb start 
 
 script:
-  - xvfb-run python manage.py test
+  - python manage.py test
 
 #after_script:
   #- /etc/init.d/xvfb stop
