@@ -9,10 +9,6 @@ services:
   - mysql
   - selenium
 
-env:
-  global:
-    - DISPLAY=:99.0
-
 install:
   - pip install -r requirements.txt
 
