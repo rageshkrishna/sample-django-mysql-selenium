@@ -4,11 +4,10 @@ language: python
 
 python:
   - 2.7
-addons:
-  firefox: "28.0"
+
 services:
   - mysql
-#  - selenium
+  - selenium
 
 env:
   global:
@@ -21,10 +20,6 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - mysql -e 'create database if not exists test;'
-  #- /etc/init.d/xvfb start 
 
 script:
   - python manage.py test
-
-#after_script:
-  #- /etc/init.d/xvfb stop
