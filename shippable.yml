@@ -21,4 +21,4 @@ before_script:
   - mysql -e 'create database if not exists test;'
 
 script:
-  - python manage.py test
+  - xvfb-run python manage.py test
