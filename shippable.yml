@@ -4,9 +4,6 @@ language: python
 
 python:
   - 2.7
-  
-env:
- - SHIPPABLE_SELENIUM_CMD="java -Djava.security.egd=file:///dev/urandom -jar $SHIPPABLE_SELENIUM_BINARY -port $SHIPPABLE_SELENIUM_PORT > /dev/null 2>&1 &"
 
 services:
   - mysql
